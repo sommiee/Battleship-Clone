@@ -1,0 +1,141 @@
+body {
+    margin: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust the alpha (0.7 for 70% transparency) */
+    background-position: center;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    }
+
+header {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+canvas {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* horizontal-offset vertical-offset blur-radius color */
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: 150%;
+    text-shadow: 2px 2px 4px black;
+    padding: 0;
+}
+
+h1 {
+    font-size: 70px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    margin: 0; /* Remove default margin */
+}
+
+.ships-container {
+    width: 900;
+    height: 300px;
+    margin: 30px 0;
+    background-color: #F8EEE4;
+    display: flex;
+
+}
+
+.destroyer-preview {
+    width: 100px;
+    height: 50px;
+    margin: 3px;
+}
+
+.submarine-preview {
+    width: 150px;
+    height: 50px;
+    margin: 3px;
+}
+
+.cruiser-preview {
+    width: 150px;
+    height: 50px;
+    margin: 3px;
+}
+
+.battleship-preview {
+    width: 200px;
+    height: 50px;
+    margin: 3px;
+}
+
+.carrier {
+    width: 250px;
+    height: 50px;
+    margin: 3px;
+}
+
+
+.destroyer {
+    background-color: #d03161;
+}
+
+.submarine {
+    background-color: #ee8080;
+}
+
+.cruiser {
+    background-color: #bfd8d1;
+}
+
+.battleship {
+    background-color: #178a94;
+}
+
+.carrier {
+    /*background-image:url("ship.png");
+    background-size: contain; */
+    background-color: #E85F34;
+}
+
+
+button {
+    /* Common styling for both buttons */
+    font-size: 20px; /* Adjust the font size */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 30px; /* Adjust the padding */
+    margin: 10px; /* Add some margin between buttons */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#restart-game-button {
+    background-color: whitesmoke; /* Set a background color */
+    color: black; /* Set text color */
+
+}
+
+#start-button {
+    /* Styles specific to the start button */
+    background-color: whitesmoke; /* Set a background color */
+    color: black; /* Set text color */
+}
+
+.stats {
+   color: whitesmoke;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+}
